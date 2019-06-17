@@ -9,10 +9,13 @@ lb config noauto \
 	--updates true \
 	--backports true \
 	--security true \
-	--archive-areas "main contrib non-free" \
-	--debian-installer live \
+	--win32-loader false \
+	--archive-areas "stretch-backports main contrib non-free" \
+	--debian-installer false \
 	--bootappend-live "boot=live components hostname=sclocbuild" \
 	--linux-packages "linux-image linux-headers" \
-	--mirror-binary http://www.nic.funet.fi/debian \
-	--mirror-bootstrap http://www.nic.funet.fi/debian \
+	--memtest none \
+	--apt-indices false \
+	--mirror-binary http://mirrors.dotsrc.org/debian \
+	--mirror-bootstrap http://mirrors.dotsrc.org/debian \
 	"$@"
