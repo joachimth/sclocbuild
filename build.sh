@@ -15,7 +15,7 @@ lb config \
 	"$@"
 
 # Gimmeh X.
-echo \ 
+echo \
 	task-xfce-desktop \
 	task-danish \
 	task-danish-desktop \
