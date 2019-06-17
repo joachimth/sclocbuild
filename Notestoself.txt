@@ -1,0 +1,5 @@
+sudo su
+cd /media/sclocbuild
+git pull
+xterm -bg black -fg red -e "./build.sh; bash"
+
