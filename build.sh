@@ -17,6 +17,8 @@ lb config \
 # Gimmeh X.
 echo \ 
 	task-xfce-desktop \
+	task-danish \
+	task-danish-desktop \
 	>config/package-lists/my-live.list.chroot
 
 echo \
@@ -34,7 +36,6 @@ echo \
 	pciutils \
 	smartmontools \
 	usbutils \
-	vim \
 	>config/package-lists/tools.list.chroot
 
 # Link our pretty little hooks.
