@@ -15,7 +15,9 @@ lb config \
 	"$@"
 
 # Gimmeh X.
-echo task-kde-desktop >config/package-lists/my-live.list.chroot
+echo \ 
+	task-xfce-desktop \
+	>config/package-lists/my-live.list.chroot
 
 echo \
 	cryptsetup \
@@ -44,7 +46,7 @@ done
 lb build
 
 # List devices, if lsscsi is available.
-lsscsi 2>/dev/null || true
+#lsscsi 2>/dev/null || true
 
 echo 'Time to "burn", make sure you use the right drive:'
 echo "  dd if=live-image-amd64.img of=/dev/sdX bs=4096 status=progress"
