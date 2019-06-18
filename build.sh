@@ -17,8 +17,6 @@ lb config \
 # Gimmeh X.
 echo \
 	task-xfce-desktop \
-	task-danish \
-	task-danish-desktop \
 	>config/package-lists/my-live.list.chroot
 
 echo \

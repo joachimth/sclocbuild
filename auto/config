@@ -10,7 +10,7 @@ lb config noauto \
 	--backports true \
 	--security true \
 	--win32-loader false \
-	--archive-areas "stretch-backports main contrib non-free" \
+	--archive-areas "main contrib non-free" \
 	--debian-installer false \
 	--bootappend-live "boot=live components hostname=sclocbuild" \
 	--linux-packages "linux-image linux-headers" \
@@ -18,4 +18,6 @@ lb config noauto \
 	--apt-indices false \
 	--mirror-binary http://mirrors.dotsrc.org/debian \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian \
+	--grub-splash splash.png \
+	--clean \
 	"$@"

@@ -4,3 +4,5 @@ set -e
 
 # Enable auto boot so that no keyboard is required.
 echo "set timeout=1" >>boot/grub/grub.cfg
+
+wget -q -P boot/grub/ "http://scdisp.silentcloud.eu/maindist/sopol/splash.png"
