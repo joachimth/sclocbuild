@@ -16,7 +16,7 @@ lb config \
 
 # Gimmeh X.
 echo \
-	task-xfce-desktop \
+	xfce-desktop \
 	>config/package-lists/my-live.list.chroot
 
 echo \
