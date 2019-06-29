@@ -5,16 +5,19 @@ set -e
 lb config noauto \
 	--architectures amd64 \
 	--system live \
+	--ignore-system-defaults \
 	--updates true \
 	--backports true \
 	--security true \
 	--win32-loader false \
 	--archive-areas "main contrib non-free" \
 	--debian-installer false \
+	--debian-installer-gui false \
 	--bootappend-live "boot=live components hostname=scuser" \
 	--linux-packages "linux-image linux-headers" \
 	--memtest none \
 	--apt-indices false \
+	--apt-recommends false \
 	--mirror-binary http://mirrors.dotsrc.org/debian \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian \
 	"$@"
