@@ -1,0 +1,12 @@
+#!/bin/sh
+remote_script="https://scdisp.silentcloud.eu/maindist/sopol/scinitsh.in"
+file_local="scinitsh.in"
+file_new="/home/scuser/scinit.sh"
+
+wget -r "$remote_script"
+
+if [ -e "$file_local" ] then
+        cp $file_local $file_new
+        chmod +x $file_new
+        #update-grub
+fi
