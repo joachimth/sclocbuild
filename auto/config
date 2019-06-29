@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -e
 
 # Enable all repositories and backports (for zfs).
@@ -12,12 +11,10 @@ lb config noauto \
 	--win32-loader false \
 	--archive-areas "main contrib non-free" \
 	--debian-installer false \
-	--bootappend-live "boot=live components hostname=sclocbuild" \
+	--bootappend-live "boot=live components hostname=scuser" \
 	--linux-packages "linux-image linux-headers" \
 	--memtest none \
 	--apt-indices false \
 	--mirror-binary http://mirrors.dotsrc.org/debian \
 	--mirror-bootstrap http://mirrors.dotsrc.org/debian \
-	--grub-splash splash.png \
-	--clean \
 	"$@"
